@@ -2,123 +2,152 @@
 
 
 
-.work-sans-font{
-  font-family: "Work Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
+.work-sans-font {
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
-*{
+
+* {
     margin: 0;
     padding: 0;
 }
-.dark02{
+
+.dark02 {
     color: #424242;
 }
-.dark03{
-    color:#727272 ;
+
+.dark03 {
+    color: #727272;
 }
-.btn-orange{
-background-color:#FF900E;
+
+.btn-orange {
+    background-color: #FF900E;
 }
-  header{
+
+header {
     /* background-color: rgba(255, 192, 203, 0.568); */
     background-color: rgba(255, 144, 14, 0.1);
     /* height: 40vh;
     width: 100%; */
-  }
-.size{
+}
+
+.size {
     width: 80%;
     margin: 0 auto;
-    border:2px solid blue;
+    border: 2px solid blue;
 }
-nav{
+
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     /* border: 2px solid black; */
- 
+
 }
-.menu{
+
+.menu {
     display: flex;
     justify-content: space-between;
-    align-items: center;  
+    align-items: center;
     gap: 2rem;
     font-size: 1rem;
-    font-weight:400;
+    font-weight: 400;
 }
-a{
+
+a {
     text-decoration: none;
-    color:black;
+    color: black;
 }
-.brand{
+
+.brand {
     font-size: 2.8rem;
     font-weight: 700;
 }
-nav,.banner{
-    max-width:1440px;
-margin: 0px auto;
-margin-bottom: 50px;
+
+nav,
+.banner {
+    max-width: 1440px;
+    margin: 0px auto;
+    margin-bottom: 50px;
 }
+
 /* banner  style  */
-.banner{
+.banner {
     /* border:2px solid black; */
-  max-width: 850px;
-    text-align:center;
+    max-width: 850px;
+    text-align: center;
     margin: 10px auto;
 }
-.heading{
+
+.heading {
     font-size: 3.3rem;
     font-weight: 700;
 }
-.description{
-margin: 15px auto;
+
+.description {
+    margin: 15px auto;
 }
-.btn{
+
+.btn {
     padding: 10px;
     color: white;
     border-radius: 8px;
     font-size: 1rem;
     margin: 10px;
-    border:1px solid #FF900E;
+    border: 1px solid #FF900E;
 }
-.banner-img{
+
+.banner-img {
     width: 94%;
     text-align: center;
 }
 
 /* section style start  */
-section{
+section {
     margin-top: 130px;
 }
-.team-details{
+
+.team-details {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-  
-}
-.teams{
-    border: 2px solid blue;
-    display: grid;
- grid-template-columns: 1fr 1fr;
- gap: 25px;
 
 }
-.team-content{
+
+.teams {
+    border: 2px solid blue;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+    margin-left: 3px;
+
+}
+
+.team-content {
     border: 2px solid black;
     text-align: left;
-    width: 25%;
+    width: 33%;
     margin-left: 3%;
 }
-.content-title{
+
+.content-title {
     font-size: 2.6rem;
 }
-.content-title > .lighter{
+
+.content-title>.lighter {
     font-weight: 500;
 }
-.content-title > .white{
-    color: white;
+
+.content-title>.white {
+    color: #FF900E;
+}
+
+.content-desc {
+    font-size: 1rem;
+    padding: 10px 0;
 }
 
 
@@ -204,28 +233,53 @@ section{
 
 /* responsive media  */
 @media screen and (max-width:536px) {
-nav,.menu{
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-    .brand {
-            font-size: 1.8rem;
-            padding: 13px;
+
+    nav,
+    .menu{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
+
+    .brand {
+        font-size: 1.8rem;
+        padding: 13px;
+    }
+
     .heading {
         font-size: 1.8rem;
     }
+
     /* responsive sections */
+    .teams{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .team-content{
+       width:auto;
+    }
+    .team-details{
+        flex-direction:column ;
+    }
 
 }
+
 @media screen and (min-width:537px) and (max-width:800px) {
-.brand{
-    font-size: 1.4rem;
-/* color: blue; */
-}
-.menu{
-    gap: 1rem;
-}
-/* responsive sections */
+    .brand {
+        font-size: 1.4rem;
+        /* color: blue; */
+    }
+
+    .menu {
+        gap: 1rem;
+    }
+
+    /* responsive sections */
+    .team-content{
+width: auto;
+    }    
+    .team-details{
+        justify-content: center;
+        flex-direction: column;
+    }
+
 }
