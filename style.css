@@ -13,7 +13,9 @@
     margin: 0;
     padding: 0;
 }
-
+.dark01{
+    color: #131313;
+}
 .dark02 {
     color: #424242;
 }
@@ -36,7 +38,7 @@ header {
 .size {
     width: 80%;
     margin: 0 auto;
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
 }
 
 nav {
@@ -108,6 +110,10 @@ nav,
 section {
     margin-top: 130px;
 }
+.fetures{
+    max-width: 850px;
+    margin: 0 auto;
+}
 
 .team-details {
     display: flex;
@@ -150,88 +156,144 @@ section {
     padding: 10px 0;
 }
 
+/* popularity style  */
+.popularity{
+    display: flex;
+    gap: 140px;
+}
+
+.feture-box{
+    /* border: 2px solid yellowgreen; */
+    padding-left: 30px;
+    font-size: 1.25rem;
+    box-sizing: 0 4px 30px 0 rgba(0,0,0,0.06);
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+#style{
+    border-left: 5px solid #FF900E;
+}.sec-title{
+    /* border: 2px solid black; */
+    /* width: 15%; */
+    font-weight: 600;
+    font-size: 2.8rem;
+
+}
+.sec-des{
+    line-height: 26px;
+    /* border: 2px solid black; */
+    /* width: 25%; */
+    font-size: 1rem;
+}
 
 
 
 
-.some-fact{
-    border: 2px solid red;
+
+
+
+.some-facts{
+    /* border: 2px solid red; */
+    max-width: 1053px;
+    margin: 50px auto;
+    padding-top: 20px;
+}
+
+.fact-title{
+    font-size: 2.5rem;
+    width: 57%;
 }
 .fact-des{
-    border: 2px solid black;
-    width: 200px;
+    /* border: 2px solid black; */
+    width: 57%;
+    font-size: 1rem;
+    margin: 7px 0 55px;
 }
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* fact style  */
+.facts-container{
+display: grid;
+grid-template-columns: repeat(4,1fr);
+/* gap: 5px; */
+margin: 10px 0px 5px 65px;
+}
+.fact{
+    border: 1px solid #FF900E;
+    width: 190px;
+    height: 140px;
+    text-align: center;
+    border-radius: 8px;
+}
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* border: 1px solid black; */
+    margin: 12px 20px 5px;
+}
+.fact-no{
+    font-size: 1.7rem;
+    font-weight: 600;
+    margin: 2px 0 10px;
+}
+.fact-name{
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+/* spnsor style  */
+.sponsor-info{
+    max-width: 1053px;
+    /* border: 2px solid red; */
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 25px;
+}
+.texts {
+    /* border: 2px solid black; */
+    text-align: center;
+    width: 55%;
+    margin: 0 auto;
+}
+
+.sponsor-title{
+    margin: 5px 0 5px;
+    font-size: 2.3rem;
+}
+.sponsor-des{
+    font-size: 1rem;
+}
+
+.brands{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    margin-top:5px ;
+    /* border: 1px solid blue; */
+    justify-content: center;
+    align-items: center;
+}
+.brand-img{
+    /* width: 166px;
+    height: 50px; */
+    filter: grayscale(100%);
+}
+
+/* footer style  */
+footer{
+    margin: 10px;
+}
+.color{
+    background-color: #FFF4E7;
+    width: 100%;
+    height: auto;
+}
+.foot{
+    text-align: center;
+    padding: 17px;
+}
 
 
 
@@ -270,15 +332,35 @@ section {
     .team-content {
         width: auto;
         margin: 5px;
+        text-align: center;
     }
 
     .team-details {
         flex-direction: column;
     }
+    /* responsive fact  */
+    .some-facts{
+        text-align: center;
+    }
 
+
+    .facts-container {
+        grid-template-columns: 1fr;
+        /* align-items: center; */
+        /* justify-content: center; */
+        margin: 0px 32px;
+        gap: 5px;
+    }
+    .brands{
+        grid-template-columns: repeat(1,1fr);
+        gap: 30px;
+    }
+    .foot{
+        padding:5px;
+    }
 }
 
-@media screen and (min-width:537px) and (max-width:800px) {
+@media screen and (min-width:537px) and (max-width:1024px) {
     .brand {
         font-size: 1.4rem;
         /* color: blue; */
@@ -296,6 +378,19 @@ section {
     .team-details {
         justify-content: center;
         flex-direction: column;
+    }
+
+    /* responsive facts */
+    
+        .facts-container {
+            grid-template-columns: repeat(4, 1fr);
+            /* gap: 5px; */
+            /* justify-content: center; */
+            margin: 10px;
+    }
+    .brands{
+        grid-template-columns: repeat(3,1fr);
+        gap: 10px;
     }
 
 }
